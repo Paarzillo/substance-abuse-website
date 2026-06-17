@@ -2,60 +2,109 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Parental Substance Abuse & Its Effects</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Parental Substance Abuse & Family Impact</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f6f7fb;
-  color: #222;
+:root {
+  --primary: #1f3a5f;
+  --secondary: #3e6b89;
+  --accent: #7aa6c2;
+  --background: #f4f7fb;
+  --card: #ffffff;
+  --text: #1c1c1c;
+  --muted: #666;
 }
 
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* HERO */
 header {
-  background: #4a6fa5;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
-  padding: 60px 20px;
+  padding: 90px 20px;
   text-align: center;
 }
 
-h1 {
-  margin: 0;
-  font-size: 36px;
+header h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
-p.subtitle {
+header p {
   font-size: 18px;
   opacity: 0.9;
-}
-
-.container {
-  max-width: 900px;
+  max-width: 700px;
   margin: auto;
-  padding: 30px;
 }
 
+/* LAYOUT */
+.container {
+  max-width: 950px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* CARDS */
 .card {
-  background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  background: var(--card);
+  padding: 25px;
+  margin-bottom: 22px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+  /* animation setup */
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all 0.6s ease;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 h2 {
-  color: #4a6fa5;
+  color: var(--primary);
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
 ul {
   padding-left: 20px;
 }
 
+li {
+  margin-bottom: 6px;
+}
+
+/* TAG */
+.tag {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   font-size: 12px;
-  color: #666;
+  color: var(--muted);
 }
 </style>
 
@@ -65,78 +114,92 @@ footer {
 
 <header>
   <h1>Parental Substance Abuse</h1>
-  <p class="subtitle">Effects on Children, Relationships, and Family Stability</p>
+  <p>Understanding the impact on children, relationships, and family stability in Ontario</p>
 </header>
 
 <div class="container">
 
   <div class="card">
-    <h2>Overview</h2>
-    <p>
-      This website explores how parental substance abuse affects children’s emotional development,
-      behaviour, relationships, and family stability within Ontario.
-    </p>
+    <span class="tag">Overview</span>
+    <h2>About This Issue</h2>
+    <p>This resource explores how parental substance abuse affects emotional development, behaviour, relationships, and family stability.</p>
   </div>
 
   <div class="card">
+    <span class="tag">Children</span>
     <h2>Impact on Children</h2>
     <ul>
       <li>Anxiety, depression, emotional instability</li>
-      <li>Trust and attachment issues</li>
-      <li>Behavioural challenges at school</li>
-      <li>Parentification (taking on adult roles)</li>
+      <li>Difficulty forming secure attachments and trust</li>
+      <li>Behavioural challenges in school environments</li>
+      <li>Parentification and early responsibility</li>
     </ul>
   </div>
 
   <div class="card">
+    <span class="tag">Relationships</span>
     <h2>Intimate Relationships</h2>
     <ul>
-      <li>Difficulty trusting partners</li>
-      <li>Fear of abandonment</li>
-      <li>Emotional withdrawal or dependence</li>
+      <li>Trust and abandonment issues</li>
+      <li>Emotional withdrawal or dependency patterns</li>
+      <li>Difficulty forming healthy bonds</li>
     </ul>
   </div>
 
   <div class="card">
+    <span class="tag">Family System</span>
     <h2>Family Impact</h2>
     <ul>
       <li>Breakdown in communication</li>
       <li>Role reversal between parent and child</li>
-      <li>Instability in routines and caregiving</li>
+      <li>Instability in caregiving and routines</li>
     </ul>
   </div>
 
   <div class="card">
-    <h2>Social Theory (Conflict Theory)</h2>
-    <p>
-      Conflict theory explains substance abuse as connected to inequality, stress, and limited access
-      to resources. These social pressures increase vulnerability and affect entire family systems.
-    </p>
+    <span class="tag">Theory</span>
+    <h2>Conflict Theory</h2>
+    <p>Substance abuse is linked to inequality, stress, and limited access to resources, affecting entire family systems.</p>
   </div>
 
   <div class="card">
+    <span class="tag">Systems</span>
     <h2>Norms, Roles & Institutions</h2>
-    <p>
-      Society expects parents to provide stability and care. When substance abuse disrupts this,
-      schools, healthcare systems, and social services often intervene to support families.
-    </p>
+    <p>Schools, healthcare, and social services support families when parental roles and norms are disrupted.</p>
   </div>
 
   <div class="card">
+    <span class="tag">Support</span>
     <h2>Support Systems in Ontario</h2>
     <ul>
       <li>Addiction counselling services</li>
       <li>Family therapy programs</li>
-      <li>Youth support services</li>
-      <li>Mental health organizations</li>
+      <li>Youth mental health supports</li>
+      <li>Community organizations</li>
     </ul>
   </div>
 
 </div>
 
 <footer>
-  Educational project – Social Science Research
+  Educational Social Science Project — Ontario
 </footer>
+
+<script>
+const cards = document.querySelectorAll('.card');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, {
+  threshold: 0.15
+});
+
+cards.forEach(card => observer.observe(card));
+</script>
 
 </body>
 </html>
